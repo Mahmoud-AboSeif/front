@@ -1,0 +1,207 @@
+/* ================
+    Colors
+===================*/
+:root {
+    --main_color: #ff8716;
+    --p_color: #7b7b7b;
+    --bg_color: #F3F3F3;
+    --color_heading: #121416;
+    --border_color: #e5e5e5d5;
+    --icons: #090b0e;
+    --footer-bg: #212529;
+    --white:#fff;
+    --sale_color: #e51A1A;
+}
+
+/* ================
+    My Classes
+===================*/
+.border {
+    border: 1px solid #999;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+.btn{
+    padding: 10px 12px;
+    background: var(--main_color);
+    border-radius: 3px;
+    color: var(--white);
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all .3s ease;
+    
+}
+.btn:hover{
+    transform: scale(1.05);
+}
+.last_layer{
+    z-index: -1;
+}
+.stars{
+    margin-bottom: 10px ;
+}
+.stars i{
+    color: var(--main_color) ;
+    font-size: 14px
+}
+.up{
+    width: 34px;
+    height: 34px;
+    border-radius: 30% ;
+    position: fixed;
+    bottom: 17px;
+    right: -50px;
+    background-color: var(--main_color);
+    color: #fff;
+    font-size: larger;
+    font-weight: bold;
+    padding: 5px;
+    transition: 0.1.5s;
+    z-index: 333;
+}
+.up span{
+    margin-left: 11.22px;
+    color: #fff;
+}
+.up.show{
+    right: 17px;
+} 
+/* ================
+    GENERAL STYLE
+===================*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--color_heading);
+}
+
+body {
+    font-family: "inter", sans-serif;
+    scroll-behavior: smooth;
+    background-color: #f8f4f4d7;
+    padding-top: 150px;
+}
+
+/* ================
+Start Scrollbar
+===================*/
+::-webkit-scrollbar {
+    width: 0.70rem;
+}
+
+::-webkit-scrollbar-track {
+    border: 7px solid #292c3b;
+    box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    background-color: #d4d4d8;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main_color);
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(105, 104, 104);
+}
+/* main{
+    width: 100%%;
+    margin: auto;
+}
+@media (max-width: 669px)
+{
+    main{
+        width: 96%;
+    }
+} */
+/* for Firefox */
+html {
+    scrollbar-color: #9e4673 #3d4a59;
+}
+
+/* ================
+End Scrollbar
+=======================================*/
+/* ================
+Start style Html elements a , button
+=======================================*/
+span{
+    color: var(--main_color);
+}
+p{
+    color: var(--p_color);
+}
+h1,h2,h3,h4,h5,h6{
+    color: var(--color_heading);
+    font-family: "DM sans", sans-serif;
+}
+img{
+    width: 100%;
+}
+input , select, button{
+    outline: none;
+    border: none;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    max-width: 1350px;
+    
+}
+@media (max-width: 1350px)
+{
+    .container{
+        width: 90%;
+        
+        
+    }
+}
+a,
+button {
+    all: unset;
+    display: inline-block;
+    transition: all .2s;
+}
+
+button:active,
+a:active {
+    scale: .9;
+}
+
+button:hover,
+a:hover {
+    cursor: pointer;
+}
+button:disabled{
+    opacity: .6;
+    cursor: not-allowed;
+    scale: none;
+}
+li {
+    list-style: none;
+}
+
+/* ===================================
+End style Html elements a , button
+======================================*/
+
+/* ===========================
+    All Icons for this project
+==============================*/
+.fa-solid {
+    color: var(--icons);
+}
